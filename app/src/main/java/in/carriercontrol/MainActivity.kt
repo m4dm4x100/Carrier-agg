@@ -1,4 +1,4 @@
-package in.carriercontrol
+package `in`.carriercontrol
 
 import android.Manifest
 import android.app.Activity
@@ -178,7 +178,7 @@ class MainActivity : Activity() {
 
     private fun networkName(type: Int?): String = when (type) {
         TelephonyManager.NETWORK_TYPE_LTE -> "LTE"
-        TelephonyManager.NETWORK_TYPE_LTE_CA -> "LTE_CA (CA reported)"
+        19 -> "LTE_CA (CA reported)"
         TelephonyManager.NETWORK_TYPE_NR -> "5G NR"
         TelephonyManager.NETWORK_TYPE_UNKNOWN, null -> "Unknown"
         else -> "Network type $type"
